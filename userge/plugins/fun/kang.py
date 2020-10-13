@@ -179,7 +179,7 @@ async def kang_(message: Message):
                 await conv.get_response(mark_read=True)
                 await conv.send_message(packname)
                 await conv.get_response(mark_read=True)
-        await message.edit(f"**Sticker** [kanged](t.me/addstickers/{packname})!")
+        await message.edit(f"**Sticker** [kanged](t.me/addstickers/{packname})!", del_in=5)
         if os.path.exists(str(photo)):
             os.remove(photo)
 
